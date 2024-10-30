@@ -18,7 +18,7 @@ A simple calculator app built with Flutter that performs basic arithmetic operat
    git clone https://github.com/prabesh-stha/Flutter_Calculator.git
    cd flutter_calculator
    ```
-   2. Install dependencies:
+2. Install dependencies:
    ```bash
    flutter pub get
    ```
