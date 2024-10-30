@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 enum ButtonColor {
-  gray('#B0BEC5'),
-  yellow('#FFEB3B');
+  black('#413e3d'),
+  yellow('#e39123');
 
   final String hexValue;
 
@@ -25,11 +25,15 @@ class ButtonScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       flex: span,
-      child: Padding(padding: const EdgeInsets.all(8),
+      child: Padding(padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 4),
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           backgroundColor: buttonColor.color,
-          foregroundColor: Colors.white
+          foregroundColor: Colors.white,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20)
+
+          )
         ),
         onPressed: onPressed, child: Text(button, style: const TextStyle(
         fontSize: 24
